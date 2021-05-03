@@ -181,3 +181,44 @@ img{
 .social-media > a:not(:last-child){
   margin-right: 23px;
 }
+
+/* featured-universities */
+.featured-universities{
+  background: #FAFAFA;
+  padding: 55px 0;
+}
+.featured-title{
+  margin: 0;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  color: rgba(55, 55, 55, 0.73);
+}
+.universities-list{
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 112px;
+}
+.university:not(:last-child){
+  margin-right: 74px;
+}
+.dotes{
+  justify-content: center;
+}
+.dote + .dote{
+  margin-left: 21px;
+}
+.dote{
+  width: 10px;
+  height: 10px;
+  background-color: rgba(124, 124, 124, 0.318837);
+  border-radius: 50%;
+}
+.solid-dote{
+  width: 14px;
+  height: 14px;
+  background-color: #717CFF;;
+}
