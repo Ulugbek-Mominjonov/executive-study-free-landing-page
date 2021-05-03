@@ -234,8 +234,10 @@ img{
 .dote{
   width: 10px;
   height: 10px;
+  border: none;
   background-color: rgba(124, 124, 124, 0.318837);
   border-radius: 50%;
+  cursor: pointer;
 }
 .solid-dote{
   width: 14px;
