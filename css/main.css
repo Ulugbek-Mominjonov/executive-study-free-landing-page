@@ -102,6 +102,15 @@ img{
   letter-spacing: -0.4625px;
   color: #373737;
 }
+.section-info{
+  max-width: 949px;
+  margin: 0 auto;
+  margin-bottom: 110px;
+  font-size: 22px;
+  line-height: 38px;
+  text-align: center;
+  color: #7D7D7D;
+}
 /* HEADER  */
 /* site-nav */
 
@@ -239,15 +248,6 @@ img{
   padding-top: 122px;
   padding-bottom: 76px;
 }
-.services-info{
-  max-width: 949px;
-  margin: 0 auto;
-  margin-bottom: 110px;
-  font-size: 22px;
-  line-height: 38px;
-  text-align: center;
-  color: #7D7D7D;
-}
 .services-list{
   justify-content: center;
 }
@@ -311,4 +311,84 @@ img{
 .services-link::after{
   margin-left: 20px;
   background-size: contain;
+}
+
+/* news */
+.news{
+  padding-top: 102px;
+  padding-bottom: 124px;
+  background-color: #FAFAFA;;
+}
+.news-container{
+  text-align: center;
+}
+.news-list{
+  justify-content: center;
+  margin-bottom: 146px;
+}
+.news-item + .news-item{
+  margin-left: 46px;
+}
+.new-link{
+  display: block;
+  max-width: 344px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 42px rgba(0, 0, 0, 0.103884);
+  border-radius: 10px;
+  text-decoration: none;
+}
+.new-link::before{
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 344px;
+  height: 224px;
+  background-position: center;
+  /* background-size: contain; */
+}
+.come::before{
+  background-image: url("../img/come.png");
+}
+.how::before{
+  background-image: url("../img/how.png");
+}
+.bit::before{
+  background-image: url("../img/bit.png");
+}
+.news-box{
+  padding: 28px 26px 62px 26px;
+}
+.new-data{
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  color: #565656;
+}
+.new-data::before{
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 12px;
+  background-image: url("../img/icon.png");
+  background-position: center;
+  vertical-align: middle;
+}
+.new-info{
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: #252525;
+}
+.news-button{
+  font-size: 22px;
+  line-height: 40px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.news-button::after{
+  margin-left: 36px;
 }
