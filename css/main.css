@@ -35,6 +35,7 @@
 /* Common styles */
 html{
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *, *::after, *::before{
   box-sizing: inherit;
@@ -78,6 +79,7 @@ img{
   list-style-type: none;
 }
 .button{
+  display: inline-block;
   padding: 12px 34px;
   background: #717CFF;
   border-radius: 11px;
@@ -110,6 +112,39 @@ img{
   line-height: 38px;
   text-align: center;
   color: #7D7D7D;
+}
+.learn-more-link{
+  padding: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.439286px;
+  color: #717CFF;
+  background-color: transparent;
+  text-decoration: none;
+}
+.learn-more-link::after{
+  margin-left: 20px;
+  background-size: contain;
+}
+.dotes{
+  justify-content: center;
+}
+.dote + .dote{
+  margin-left: 21px;
+}
+.dote{
+  width: 10px;
+  height: 10px;
+  border: none;
+  background-color: rgba(124, 124, 124, 0.318837);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.solid-dote{
+  width: 14px;
+  height: 14px;
+  background-color: #717CFF;;
 }
 /* HEADER  */
 /* site-nav */
@@ -226,25 +261,6 @@ img{
 .university:not(:last-child){
   margin-right: 74px;
 }
-.dotes{
-  justify-content: center;
-}
-.dote + .dote{
-  margin-left: 21px;
-}
-.dote{
-  width: 10px;
-  height: 10px;
-  border: none;
-  background-color: rgba(124, 124, 124, 0.318837);
-  border-radius: 50%;
-  cursor: pointer;
-}
-.solid-dote{
-  width: 14px;
-  height: 14px;
-  background-color: #717CFF;;
-}
 
 /* our-services */
 .our-services{
@@ -300,20 +316,6 @@ img{
   margin-top: 0;
   margin-bottom: 25px;
   letter-spacing: 0.444444px;
-}
-.services-link{
-  padding: 0;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
-  letter-spacing: 0.439286px;
-  color: #717CFF;
-  background-color: transparent;
-  text-decoration: none;
-}
-.services-link::after{
-  margin-left: 20px;
-  background-size: contain;
 }
 
 /* news */
@@ -394,4 +396,83 @@ img{
 }
 .news-button::after{
   margin-left: 36px;
+}
+
+/* Upcoming University Events */
+
+.upcoming-university{
+  padding-top: 98px;
+  padding-bottom: 108px;
+}
+.upcoming-list{
+  justify-content: center;
+  margin-bottom: 81px;
+}
+.upcoming-item{
+  max-width: 540px;
+  padding: 29px 31px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+}
+.upcoming-item + .upcoming-item{
+  margin-left: 47px;
+}
+.university-name{
+  margin-top: 0;
+  margin-bottom: 29px;
+  display: flex;
+  align-items: flex-start;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  color: #37474F;
+}
+.university-name > span.data{
+  margin-right: 19px;
+  padding: 10px 22px;
+  background: rgba(113, 124, 255, 0.14);
+  border-radius: 11px;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 32px;
+  text-align: center;
+  color: #717CFF;
+}
+span.data > small{
+  display: block;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #717CFF;
+}
+.upcoming-footer{
+  display: flex;
+  justify-content: space-between;
+}
+.university-info{
+  margin-top: 0;
+  margin-bottom: 26px;
+  letter-spacing: 0.444444px;
+}
+.time{
+  margin-left: 20px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: right;
+  letter-spacing: 0.444444px;
+  color: #373737;
+  vertical-align: middle;
+}
+.time::before{
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 21px;
+  vertical-align: middle;
+  background-image: url("../img/time.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
