@@ -616,3 +616,64 @@ span.data > small{
 .ready-dream-link::after{
   margin-left: 43px;
 }
+
+/* footer  */
+.footer-list{
+  padding: 0;
+  padding-top: 20px;
+  margin: 0;
+  list-style-type: none;
+}
+.footer-link{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 49px;
+  color: #EEEEEE;
+  text-decoration: none;
+}
+.site-footer{
+  padding-top: 64px;
+  padding-bottom: 45px;
+  background: #717CFF;
+}
+.footer-top{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.logo{
+  display: block;
+  margin-bottom: 26px;
+}
+address{
+  width: 343px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #EEEEEE;
+  font-style: normal;
+}
+/* footer-navigation */
+.footer-navigation{
+  margin-left: 130px;
+  margin-right: 106px;
+}
+/* our-brach */
+.our-brach{
+  margin-right: 152px;
+}
+/* social-networks */
+.social-networks{
+  align-self: flex-end;
+}
+.social-networks > a{
+  display: inline-block;
+  margin-right: 28px;
+}
+
+/* trade */
+.trade{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: #EEEEEE;
+}
