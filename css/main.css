@@ -591,3 +591,28 @@ span.data > small{
   line-height: 21px;
   color: rgba(55, 71, 79, 0.65);
 }
+
+/* Ready to chase your dreams? */
+.ready-dream{
+  padding-top: 82px;
+  padding-bottom: 74px;
+  background-color: #FAFAFA;
+}
+.ready-dream-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ready-dream-title{
+  margin-right: 40px;
+  line-height: 43px;
+}
+.ready-dream-link{
+  font-size: 22px;
+  line-height: 40px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.ready-dream-link::after{
+  margin-left: 43px;
+}
