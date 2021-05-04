@@ -528,3 +528,66 @@ span.data > small{
   margin: 0;
   line-height: 27px;
 }
+
+/* Testimonial */
+.testimonial{
+  padding-top: 115px;
+  padding-bottom: 98px;
+}
+.testimonial-container{
+  padding-right: 0;
+}
+.testomonial-list{
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  margin-bottom: 86px;
+}
+.testomonial-item + .testomonial-item{
+  margin-left: 61px;
+}
+.testomonial-link{
+  display: block;
+  width: 503px;
+  padding: 39px 34px 46px 34px;
+  font-size: 18px;
+  line-height: 31px;
+  color: rgba(55, 71, 79, 0.721569);
+  text-decoration: none;
+}
+.testomonial-item-header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.testomonial-item-header::before{
+  content: "";
+  width: 62px;
+  height: 62px;
+  margin-right: 28px;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.testomonial-name{
+  margin: 0;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+  color: #37474F;
+}
+.Harrison::before{
+  background-image: url("../img/harrison.png");
+}
+.Ainara::before{
+  background-image: url("../img/ainara.png");
+}
+.Niek::before{
+  background-image: url("../img/niek.png");
+}
+.testomonial-name > span{
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(55, 71, 79, 0.65);
+}
