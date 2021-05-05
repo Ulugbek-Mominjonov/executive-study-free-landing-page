@@ -19,24 +19,24 @@
         </a>
         
         <ul class="nav-list list">
-          <li class="nav-item">
-            <a class="nav-link" id="home" onclick="active('home')" href="#">Home</a>
+          <li class="nav-item" id="home">
+            <a class="nav-link" onclick="Remove('home')" href="#">Home</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+          <li class="nav-item" id="about">
+            <a class="nav-link" onclick="Remove('about')" href="#">About Us</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" onclick="active('services')" id="services" href="#our-sevices">Our Services</a>
+          <li class="nav-item" id="services">
+            <a class="nav-link" onclick="Remove('services')" href="#our-sevices">Our Services</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">Responsibilities</a>
+          <li class="nav-item" id="responsibilities">
+            <a class="nav-link" onclick="Remove('responsibilities')" href="#">Responsibilities</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" onclick="active('countries')" id="countries" href="#countries-covered">Country</a>
+          <li class="nav-item" id="countries">
+            <a class="nav-link" onclick="Remove('countries')" href="#countries-covered">Country</a>
           </li>
 
           <li class="nav-item">
@@ -394,19 +394,19 @@
           <h3 class="visually-hidden">Footer navigation</h3>
           <ul class="footer-nav-list footer-list">
             <li class="footer-nav-item">
-              <a class="footer-nav-link footer-link" href="#">About Us</a>
+              <a class="footer-nav-link footer-link" onclick="Remove('about')" href="#">About Us</a>
             </li>
 
             <li class="footer-nav-item">
-              <a class="footer-nav-link footer-link" href="#">Responsibilities</a>
+              <a class="footer-nav-link footer-link" onclick="Remove('responsibilities')" href="#">Responsibilities</a>
             </li>
 
             <li class="footer-nav-item">
-              <a class="footer-nav-link footer-link" href="#our-sevices">Our Services</a>
+              <a class="footer-nav-link footer-link" onclick="Remove('services')" href="#our-sevices">Our Services</a>
             </li>
 
             <li class="footer-nav-item">
-              <a class="footer-nav-link footer-link" href="#">Contact</a>
+              <a class="footer-nav-link footer-link" onclick="Remove('home')" href="#">Contact</a>
             </li>
           </ul>
         </section>
@@ -415,19 +415,19 @@
           <h3 class="visually-hidden">our service brachs</h3>
           <ul class="our-brach-list footer-list">
             <li class="our-brach-item">
-              <a class="our-brach-link footer-link" href="#">Disclaimer</a>
+              <a class="our-brach-link footer-link" onclick="Remove('home')" href="#">Disclaimer</a>
             </li>
 
             <li class="our-brach-item">
-              <a class="our-brach-link footer-link" href="#testimonial">Testimonials</a>
+              <a class="our-brach-link footer-link" onclick="Remove('home')" href="#testimonial">Testimonials</a>
             </li>
 
             <li class="our-brach-item">
-              <a class="our-brach-link footer-link" href="#">Privacy Policy</a>
+              <a class="our-brach-link footer-link" onclick="Remove('home')" href="#">Privacy Policy</a>
             </li>
 
             <li class="our-brach-item">
-              <a class="our-brach-link footer-link" href="#">Terms of Service</a>
+              <a class="our-brach-link footer-link" onclick="Remove('home')" href="#">Terms of Service</a>
             </li>
           </ul>
         </section>

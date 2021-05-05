@@ -31,6 +31,11 @@
   src: url('../fonts/roboto-v27-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/roboto-v27-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+:root {
+  --set-width: 0;
+  --active: 50%;
+}
 /* ANIMATION */
 @keyframes rotate{
   25%{
@@ -202,7 +207,7 @@ img{
   display: block;
   content: "";
   height: 3px;
-  width: 0;
+  width: var(--set-width);
   background: #717CFF;
   border-radius: 2px;
   transition: 0.3s ease;
@@ -210,6 +215,9 @@ img{
 .nav-item:hover::after{
   width: calc(50%);
 }
+/* .nav-item:first-child::after{
+  width: calc(50%);
+} */
 .nav-link{
   padding-top: 9px;
   padding-bottom: 13px;
