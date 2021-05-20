@@ -90,8 +90,8 @@ img{
 }
 .list{
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -189,7 +189,6 @@ img{
 
 .header-container{
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 15px;
@@ -215,12 +214,10 @@ img{
 .nav-item:hover::after{
   width: calc(50%);
 }
-/* .nav-item:first-child::after{
-  width: calc(50%);
-} */
 .nav-link{
   padding-top: 9px;
   padding-bottom: 13px;
+  white-space: nowrap;
   text-decoration: none;
   font-size: 17px;
   line-height: 20px;
@@ -359,6 +356,7 @@ img{
   height: 76px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 .Career::before{
   background-image: url("../img/career.png");
@@ -418,9 +416,10 @@ img{
   display: block;
   top: 0;
   left: 0;
-  width: 344px;
+  width: 100%;
   height: 224px;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .come::before{
   background-image: url("../img/come.png");
@@ -583,7 +582,7 @@ span.data > small{
 .country-link::before{
   display: block;
   content: "";
-  width: 348px;
+  width: 100%;
   height: 215px;
   border-radius: 29px;
   background-position: center;
@@ -745,6 +744,7 @@ span.data > small{
 }
 .footer-top{
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -787,4 +787,196 @@ address{
   font-size: 18px;
   line-height: 32px;
   color: #EEEEEE;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+  .section-title{
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .section-info{
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 60px;
+  }
+  .solid-dote{
+    width: 12px;
+    height: 12px;
+  }
+  .dote{
+    width: 9px;
+    height: 9px;
+  }
+  .container{
+    padding: 0 30px;
+  }
+  .header-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .nav-item + .nav-item{
+    margin-left: 20px;
+  }
+  .nav-link{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  /* HERO  */
+  .hero-section{
+    padding-top: 70px;
+  }
+  .hero-container::after{
+    height: 440px;
+  }
+  .hero-date{
+    width: 75%;
+  }
+  .hero-title{
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .apply-button{
+    margin-bottom: 70px;
+  }
+  .social-media{
+    margin-bottom: 20px;
+  }
+  /* featured-universities */
+  .universities-list{
+    flex-wrap: nowrap;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  /* our-services */
+  .our-services{
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+  .services-list{
+    width: 95%;
+    margin: 0 auto;
+    align-items: stretch;
+  }
+  .services-item{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+  .services-item:not(:nth-child(3)):not(:last-child){
+    margin-right: 5%;
+  }
+  .services-item::before{
+    width: 72px;
+    height: 72px;
+  }
+  .services-name{
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .services-item > .learn-more-link{
+    margin-top: auto;
+  }
+  /* news  */
+  .news{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .news-list{
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin-bottom: 100px;
+  }
+  .news-item{
+    width: 30%;
+  }
+  .news-item + .news-item{
+    margin-left: 5%;
+  }
+  .new-link::before{
+    height: 185px;
+  }
+  .news-box{
+    padding-bottom: 40px;
+    min-height: 188px;
+  }
+  .new-info{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  /* Upcoming University Events */
+  .upcoming-university{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .upcoming-list{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .upcoming-item{
+    width: 47%;
+  }
+  .upcoming-item + .upcoming-item{
+    margin-left: 6%;
+  }
+  .university-name{
+    font-size: 22px;
+    line-height: 34px;
+  }
+  /* Countries We Covered  */
+  .countries-covered{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .countries-covered-list{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .country{
+    width: 30%;
+  }
+  .country + .country{
+    margin-left: 5%;
+  }
+  /* Testimonial */
+  .testimonial{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .testomonial-list{
+    margin-bottom: 40px;
+  }
+  /* Ready to chase your dreams? */
+  .ready-dream{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .ready-dream-title{
+    line-height: 43px;
+    margin-bottom: 0;
+  }
+  /* footer  */
+  .site-footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer-list{
+    padding: 0;
+  }
+  .our-address{
+    width: 100%;
+  }
+  .footer-navigation{
+    margin-left: 0;
+  }
+  .social-networks > a > img{
+    width: 20px;
+    height: 20px;
+  }
 }
