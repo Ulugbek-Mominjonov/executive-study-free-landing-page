@@ -1,35 +1,39 @@
 /* FONTS  */
 /* roboto-regular - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/roboto-v27-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v27-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-500 - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/roboto-v27-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v27-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/roboto-v27-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v27-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-700 - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/roboto-v27-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/roboto-v27-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v27-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-900 - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/roboto-v27-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v27-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/roboto-v27-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v27-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 :root {
@@ -37,27 +41,29 @@
   --active: 50%;
 }
 /* ANIMATION */
-@keyframes rotate{
-  25%{
+@keyframes rotate {
+  25% {
     transform: rotate(10deg);
   }
-  75%{
+  75% {
     transform: rotate(-10deg);
   }
-  100%{
+  100% {
     transform: rotate(0deg);
   }
 }
 
 /* Common styles */
-html{
+html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-*, *::after, *::before{
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
-body{
+body {
   padding: 0;
   margin: 0;
   margin-top: 92px;
@@ -77,18 +83,18 @@ body{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-img{
+img {
   max-width: 100%;
   display: block;
 }
-.container{
+.container {
   max-width: 1300px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
 }
-.list{
+.list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -96,15 +102,15 @@ img{
   margin: 0;
   list-style-type: none;
 }
-.button{
+.button {
   display: inline-block;
   padding: 12px 34px;
-  background: #717CFF;
+  background: #717cff;
   border-radius: 11px;
   border: none;
   transition: background 0.5s ease;
 }
-.button::after{
+.button::after {
   display: inline-block;
   content: "";
   width: 19px;
@@ -114,13 +120,13 @@ img{
   vertical-align: middle;
   transition: 0.5s ease;
 }
-.button:hover{
+.button:hover {
   background: rgba(113, 124, 255, 0.8);
 }
-.button:hover::after{
+.button:hover::after {
   transform: translateX(15px);
 }
-.section-title{
+.section-title {
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 25px;
@@ -130,41 +136,41 @@ img{
   letter-spacing: -0.4625px;
   color: #373737;
 }
-.section-info{
+.section-info {
   max-width: 949px;
   margin: 0 auto;
   margin-bottom: 110px;
   font-size: 22px;
   line-height: 38px;
   text-align: center;
-  color: #7D7D7D;
+  color: #7d7d7d;
 }
-.learn-more-link{
+.learn-more-link {
   padding: 0;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   letter-spacing: 0.439286px;
-  color: #717CFF;
+  color: #717cff;
   background-color: transparent;
   text-decoration: none;
   transition: color 0.3s ease;
 }
-.learn-more-link:hover{
+.learn-more-link:hover {
   background-color: transparent;
   color: rgba(113, 124, 255, 0.7);
 }
-.learn-more-link::after{
+.learn-more-link::after {
   margin-left: 20px;
   background-size: contain;
 }
-.dotes{
+.dotes {
   justify-content: center;
 }
-.dote + .dote{
+.dote + .dote {
   margin-left: 21px;
 }
-.dote{
+.dote {
   width: 10px;
   height: 10px;
   border: none;
@@ -172,13 +178,13 @@ img{
   border-radius: 50%;
   cursor: pointer;
 }
-.solid-dote{
+.solid-dote {
   width: 14px;
   height: 14px;
-  background-color: #717CFF;;
+  background-color: #717cff;
 }
 /* HEADER  */
-.site-header{
+.site-header {
   background-color: #fff;
   position: fixed;
   width: 100%;
@@ -187,34 +193,37 @@ img{
 }
 /* site-nav */
 
-.header-container{
+.header-container {
   display: flex;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 15px;
 }
-.logo-link{
+.logo-link {
   margin-right: 30px;
 }
-.nav-list{
+.dropdown-button {
+  display: none;
+}
+.nav-list {
   margin-left: auto;
 }
-.nav-item + .nav-item{
+.nav-item + .nav-item {
   margin-left: 70px;
 }
-.nav-item:not(:last-child)::after{
+.nav-item:not(:last-child)::after {
   display: block;
   content: "";
   height: 3px;
   width: var(--set-width);
-  background: #717CFF;
+  background: #717cff;
   border-radius: 2px;
   transition: 0.3s ease;
 }
-.nav-item:hover::after{
+.nav-item:hover::after {
   width: calc(50%);
 }
-.nav-link{
+.nav-link {
   padding-top: 9px;
   padding-bottom: 13px;
   white-space: nowrap;
@@ -223,29 +232,29 @@ img{
   line-height: 20px;
   color: #373737;
 }
-.nav-button{
+.nav-button {
   padding: 9px 30px 13px 32px;
-  border: 2px solid #717CFF;
+  border: 2px solid #717cff;
   border-radius: 11px;
   transition: 0.3s ease;
 }
-.nav-button:hover{
-  background-color: #717CFF;
-  color: #FAFAFA;
+.nav-button:hover {
+  background-color: #717cff;
+  color: #fafafa;
 }
 
 /* hero  */
-.hero-section{
+.hero-section {
   padding-top: 101px;
   background-image: url("../img/Oval.png");
   background-repeat: no-repeat;
   background-position: calc(50% + 406px) 245px;
 }
-.hero-container{
+.hero-container {
   display: flex;
   align-items: center;
 }
-.hero-container::after{
+.hero-container::after {
   content: "";
   width: 470px;
   height: 565px;
@@ -253,59 +262,59 @@ img{
   background-repeat: no-repeat;
   background-size: contain;
 }
-.hero-date{
+.hero-date {
   max-width: 632px;
   margin-right: 61px;
-} 
-.hero-title{
+}
+.hero-title {
   margin-top: 0;
   margin-bottom: 15px;
   font-weight: 900;
   font-size: 56px;
   line-height: 66px;
-  color: #2F2F2F;
+  color: #2f2f2f;
 }
-.hero-title > strong{
-  color: #717CFF;
+.hero-title > strong {
+  color: #717cff;
 }
-.hero-text{
+.hero-text {
   margin-top: 0;
   margin-bottom: 42px;
   font-size: 22px;
   line-height: 38px;
-  color: #7D7D7D;
+  color: #7d7d7d;
 }
-.apply-button{
+.apply-button {
   display: inline-block;
   margin-bottom: 101px;
   font-size: 22px;
   line-height: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
-.apply-button::after{
+.apply-button::after {
   margin-left: 29px;
 }
-.social-media{
+.social-media {
   display: flex;
   align-items: center;
 }
-.social-media > a{
+.social-media > a {
   transition: 0.3s ease;
 }
-.social-media > a:hover{
+.social-media > a:hover {
   transform: rotate(18deg);
 }
-.social-media > a:not(:last-child){
+.social-media > a:not(:last-child) {
   margin-right: 23px;
 }
 
 /* featured-universities */
-.featured-universities{
-  background: #FAFAFA;
+.featured-universities {
+  background: #fafafa;
   padding: 55px 0;
 }
-.featured-title{
+.featured-title {
   margin: 0;
   font-weight: 500;
   font-size: 23px;
@@ -315,41 +324,41 @@ img{
   text-transform: uppercase;
   color: rgba(55, 55, 55, 0.73);
 }
-.universities-list{
+.universities-list {
   justify-content: center;
   margin-top: 94px;
   margin-bottom: 112px;
 }
-.university{
+.university {
   transition: 0.3s ease;
 }
-.university:hover{
+.university:hover {
   transform: scale(1.1);
 }
-.university:not(:last-child){
+.university:not(:last-child) {
   margin-right: 74px;
 }
 
 /* our-services */
-.our-services{
+.our-services {
   padding-top: 122px;
   padding-bottom: 76px;
 }
-.services-list{
+.services-list {
   justify-content: center;
 }
-.services-item{
+.services-item {
   width: 344px;
   margin-bottom: 50px;
   padding: 30px 17px 30px 31px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
   border-radius: 15px;
 }
-.services-item:not(:nth-child(3)):not(:last-child){
+.services-item:not(:nth-child(3)):not(:last-child) {
   margin-right: 47px;
 }
-.services-item::before{
+.services-item::before {
   display: block;
   content: "";
   width: 76px;
@@ -358,60 +367,60 @@ img{
   background-position: center;
   background-size: contain;
 }
-.Career::before{
+.Career::before {
   background-image: url("../img/career.png");
 }
-.Admissions::before{
+.Admissions::before {
   background-image: url("../img/university.png");
 }
-.Visa::before{
+.Visa::before {
   background-image: url("../img/visa.png");
 }
-.Accommodation::before{
+.Accommodation::before {
   background-image: url("../img/accomidation.png");
 }
-.Briefing::before{
+.Briefing::before {
   background-image: url("../img/briefing.png");
 }
-.services-name{
+.services-name {
   font-weight: 700;
   margin-top: 30px;
   margin-bottom: 9px;
   font-size: 24px;
   line-height: 37px;
-  color: #37474F;
+  color: #37474f;
 }
-.services-text{
+.services-text {
   margin-top: 0;
   margin-bottom: 25px;
   letter-spacing: 0.444444px;
 }
 
 /* news */
-.news{
+.news {
   padding-top: 102px;
   padding-bottom: 124px;
-  background-color: #FAFAFA;;
+  background-color: #fafafa;
 }
-.news-container{
+.news-container {
   text-align: center;
 }
-.news-list{
+.news-list {
   justify-content: center;
   margin-bottom: 146px;
 }
-.news-item + .news-item{
+.news-item + .news-item {
   margin-left: 46px;
 }
-.new-link{
+.new-link {
   display: block;
   max-width: 344px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 6px 42px rgba(0, 0, 0, 0.103884);
   border-radius: 10px;
   text-decoration: none;
 }
-.new-link::before{
+.new-link::before {
   content: "";
   display: block;
   top: 0;
@@ -421,26 +430,26 @@ img{
   background-position: center;
   background-repeat: no-repeat;
 }
-.come::before{
+.come::before {
   background-image: url("../img/come.png");
 }
-.how::before{
+.how::before {
   background-image: url("../img/how.png");
 }
-.bit::before{
+.bit::before {
   background-image: url("../img/bit.png");
 }
-.news-box{
+.news-box {
   padding: 28px 26px 62px 26px;
   text-align: left;
 }
-.new-data{
+.new-data {
   font-weight: 900;
   font-size: 16px;
   line-height: 19px;
   color: #565656;
 }
-.new-data::before{
+.new-data::before {
   content: "";
   display: inline-block;
   width: 15px;
@@ -450,7 +459,7 @@ img{
   background-position: center;
   vertical-align: middle;
 }
-.new-info{
+.new-info {
   margin-top: 15px;
   margin-bottom: 0;
   font-weight: bold;
@@ -458,37 +467,37 @@ img{
   line-height: 26px;
   color: #252525;
 }
-.news-button{
+.news-button {
   font-size: 22px;
   line-height: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
-.news-button::after{
+.news-button::after {
   margin-left: 36px;
 }
 
 /* Upcoming University Events */
 
-.upcoming-university{
+.upcoming-university {
   padding-top: 98px;
   padding-bottom: 108px;
 }
-.upcoming-list{
+.upcoming-list {
   justify-content: center;
   margin-bottom: 81px;
 }
-.upcoming-item{
+.upcoming-item {
   max-width: 540px;
   padding: 29px 31px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
   border-radius: 15px;
 }
-.upcoming-item + .upcoming-item{
+.upcoming-item + .upcoming-item {
   margin-left: 47px;
 }
-.university-name{
+.university-name {
   margin-top: 0;
   margin-bottom: 29px;
   display: flex;
@@ -496,9 +505,9 @@ img{
   font-weight: 700;
   font-size: 24px;
   line-height: 37px;
-  color: #37474F;
+  color: #37474f;
 }
-.university-name > span.data{
+.university-name > span.data {
   margin-right: 19px;
   padding: 10px 22px;
   background: rgba(113, 124, 255, 0.14);
@@ -507,29 +516,29 @@ img{
   font-size: 27px;
   line-height: 32px;
   text-align: center;
-  color: #717CFF;
+  color: #717cff;
 }
-span.data:hover{
+span.data:hover {
   animation: rotate 0.7s linear 1;
 }
-span.data > small{
+span.data > small {
   display: block;
   font-weight: 900;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #717CFF;
+  color: #717cff;
 }
-.upcoming-footer{
+.upcoming-footer {
   display: flex;
   justify-content: space-between;
 }
-.university-info{
+.university-info {
   margin-top: 0;
   margin-bottom: 26px;
   letter-spacing: 0.444444px;
 }
-.time{
+.time {
   margin-left: 20px;
   font-weight: 900;
   font-size: 16px;
@@ -539,7 +548,7 @@ span.data > small{
   color: #373737;
   vertical-align: middle;
 }
-.time::before{
+.time::before {
   display: inline-block;
   content: "";
   width: 24px;
@@ -551,27 +560,27 @@ span.data > small{
 }
 
 /* Countries We Covered  */
-.countries-covered{
+.countries-covered {
   padding-top: 82px;
   padding-bottom: 136px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
-.countries-covered-list{
+.countries-covered-list {
   justify-content: center;
   margin-bottom: 70px;
 }
-.country + .country{
+.country + .country {
   margin-left: 46px;
 }
-.country{
+.country {
   padding: 10px 10px 40px 10px;
   transition: 0.3s ease;
 }
-.country:hover{
+.country:hover {
   border-radius: 29px;
   box-shadow: 0px 0px 77px rgb(0 0 0 / 6%);
 }
-.country-link{
+.country-link {
   display: block;
   max-width: 348px;
   text-decoration: none;
@@ -579,7 +588,7 @@ span.data > small{
   line-height: 27px;
   color: rgba(55, 71, 79, 0.721569);
 }
-.country-link::before{
+.country-link::before {
   display: block;
   content: "";
   width: 100%;
@@ -588,45 +597,45 @@ span.data > small{
   background-position: center;
   background-repeat: no-repeat;
 }
-.Australia::before{
+.Australia::before {
   background-image: url("../img/australia.png");
 }
-.Canada::before{
+.Canada::before {
   background-image: url("../img/canada.png");
 }
-.Uk::before{
+.Uk::before {
   background-image: url("../img/uk.png");
 }
-.countries-name{
+.countries-name {
   margin-top: 27px;
   margin-bottom: 11px;
   font-weight: 900;
   font-size: 25px;
   line-height: 29px;
-  color: #37474F;
+  color: #37474f;
 }
-.countries-info{
+.countries-info {
   margin: 0;
   line-height: 27px;
 }
 
 /* Testimonial */
-.testimonial{
+.testimonial {
   padding-top: 115px;
   padding-bottom: 98px;
 }
-.testimonial-container{
+.testimonial-container {
   padding-right: 0;
 }
-.testomonial-list{
+.testomonial-list {
   flex-wrap: nowrap;
   overflow-x: hidden;
   margin-bottom: 86px;
 }
-.testomonial-item + .testomonial-item{
+.testomonial-item + .testomonial-item {
   margin-left: 61px;
 }
-.testomonial-link{
+.testomonial-link {
   display: block;
   width: 503px;
   padding: 39px 34px 46px 34px;
@@ -635,18 +644,18 @@ span.data > small{
   color: rgba(55, 71, 79, 0.721569);
   text-decoration: none;
 }
-.testomonial-link:hover{
+.testomonial-link:hover {
   box-shadow: 0px 0px 77px rgb(0 0 0 / 6%);
 }
-.testomonial-link:hover .testomonial-item-header::before{
+.testomonial-link:hover .testomonial-item-header::before {
   animation: rotate 0.7s linear 1;
 }
-.testomonial-item-header{
+.testomonial-item-header {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
 }
-.testomonial-item-header::before{
+.testomonial-item-header::before {
   content: "";
   width: 62px;
   height: 62px;
@@ -655,23 +664,23 @@ span.data > small{
   background-repeat: no-repeat;
   vertical-align: middle;
 }
-.testomonial-name{
+.testomonial-name {
   margin: 0;
   font-weight: 900;
   font-size: 22px;
   line-height: 26px;
-  color: #37474F;
+  color: #37474f;
 }
-.Harrison::before{
+.Harrison::before {
   background-image: url("../img/harrison.png");
 }
-.Ainara::before{
+.Ainara::before {
   background-image: url("../img/ainara.png");
 }
-.Niek::before{
+.Niek::before {
   background-image: url("../img/niek.png");
 }
-.testomonial-name > span{
+.testomonial-name > span {
   margin-top: 4px;
   font-weight: 500;
   font-size: 18px;
@@ -680,32 +689,32 @@ span.data > small{
 }
 
 /* Ready to chase your dreams? */
-.ready-dream{
+.ready-dream {
   padding-top: 82px;
   padding-bottom: 74px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
-.ready-dream-container{
+.ready-dream-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.ready-dream-title{
+.ready-dream-title {
   margin-right: 40px;
   line-height: 43px;
 }
-.ready-dream-link{
+.ready-dream-link {
   font-size: 22px;
   line-height: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
-.ready-dream-link::after{
+.ready-dream-link::after {
   margin-left: 43px;
 }
 
 /* footer  */
-.footer-list{
+.footer-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -714,269 +723,1093 @@ span.data > small{
   margin: 0;
   list-style-type: none;
 }
-.footer-link{
+.footer-link {
   font-weight: 500;
   font-size: 18px;
   line-height: 49px;
-  color: #EEEEEE;
+  color: #eeeeee;
   text-decoration: none;
   transition: 0.3s ease;
 }
-.footer-link::after{
+.footer-link::after {
   display: block;
   content: "";
   height: 3px;
   width: 0;
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 2px;
   transition: 0.3s ease;
 }
-.footer-link:hover{
-  color: #FFF;
+.footer-link:hover {
+  color: #fff;
 }
-.footer-link:hover::after{
+.footer-link:hover::after {
   width: calc(50%);
 }
-.site-footer{
+.site-footer {
   padding-top: 64px;
   padding-bottom: 45px;
-  background: #717CFF;
+  background: #717cff;
 }
-.footer-top{
+.footer-top {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
 }
-.logo{
+.logo {
   display: block;
   margin-bottom: 26px;
 }
-address{
+address {
   width: 343px;
   font-size: 18px;
   line-height: 32px;
-  color: #EEEEEE;
+  color: #eeeeee;
   font-style: normal;
 }
 /* footer-navigation */
-.footer-navigation{
+.footer-navigation {
   margin-left: 130px;
   margin-right: 106px;
 }
 /* our-brach */
-.our-brach{
+.our-brach {
   margin-right: 152px;
 }
 /* social-networks */
-.social-networks{
+.social-networks {
   align-self: flex-end;
 }
-.social-networks > a{
+.social-networks > a {
   display: inline-block;
   margin-right: 28px;
   transition: 0.3s;
 }
-.social-networks > a:hover{
+.social-networks > a:hover {
   transform: scale(1.2);
 }
 
 /* trade */
-.trade{
+.trade {
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
-  .section-title{
+  .section-title {
     font-size: 35px;
     line-height: 50px;
   }
-  .section-info{
+  .section-info {
     font-size: 18px;
     line-height: 32px;
     margin-bottom: 60px;
   }
-  .solid-dote{
+  .solid-dote {
     width: 12px;
     height: 12px;
   }
-  .dote{
+  .dote {
     width: 9px;
     height: 9px;
   }
-  .container{
+  .container {
     padding: 0 30px;
   }
-  .header-container{
+  /* HEADER  */
+  .header-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  .nav-item + .nav-item{
+  .nav-item + .nav-item {
     margin-left: 20px;
   }
-  .nav-link{
+  .nav-link {
     font-size: 16px;
     line-height: 18px;
   }
   /* HERO  */
-  .hero-section{
+  .hero-section {
     padding-top: 70px;
   }
-  .hero-container::after{
+  .hero-container::after {
     height: 440px;
   }
-  .hero-date{
+  .hero-date {
     width: 75%;
   }
-  .hero-title{
+  .hero-title {
     font-size: 50px;
     line-height: 60px;
   }
-  .apply-button{
+  .apply-button {
     margin-bottom: 70px;
   }
-  .social-media{
+  .social-media {
     margin-bottom: 20px;
   }
   /* featured-universities */
-  .universities-list{
+  .universities-list {
     flex-wrap: nowrap;
     margin-top: 70px;
     margin-bottom: 70px;
   }
   /* our-services */
-  .our-services{
+  .our-services {
     padding-top: 60px;
     padding-bottom: 10px;
   }
-  .services-list{
+  .services-list {
     width: 95%;
     margin: 0 auto;
     align-items: stretch;
   }
-  .services-item{
+  .services-item {
     display: flex;
     flex-direction: column;
     width: 30%;
   }
-  .services-item:not(:nth-child(3)):not(:last-child){
+  .services-item:not(:nth-child(3)):not(:last-child) {
     margin-right: 5%;
   }
-  .services-item::before{
+  .services-item::before {
     width: 72px;
     height: 72px;
   }
-  .services-name{
+  .services-name {
     font-size: 22px;
     line-height: 33px;
   }
-  .services-item > .learn-more-link{
+  .services-item > .learn-more-link {
     margin-top: auto;
   }
   /* news  */
-  .news{
+  .news {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .news-list{
+  .news-list {
     width: 95%;
     margin: 0 auto;
     flex-wrap: nowrap;
     align-items: stretch;
     margin-bottom: 100px;
   }
-  .news-item{
+  .news-item {
     width: 30%;
   }
-  .news-item + .news-item{
+  .news-item + .news-item {
     margin-left: 5%;
   }
-  .new-link::before{
+  .new-link::before {
     height: 185px;
   }
-  .news-box{
+  .news-box {
     padding-bottom: 40px;
     min-height: 188px;
   }
-  .new-info{
+  .new-info {
     font-size: 20px;
     line-height: 24px;
   }
   /* Upcoming University Events */
-  .upcoming-university{
+  .upcoming-university {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .upcoming-list{
+  .upcoming-list {
     width: 95%;
     margin: 0 auto;
     margin-bottom: 60px;
   }
-  .upcoming-item{
+  .upcoming-item {
     width: 47%;
   }
-  .upcoming-item + .upcoming-item{
+  .upcoming-item + .upcoming-item {
     margin-left: 6%;
   }
-  .university-name{
+  .university-name {
     font-size: 22px;
     line-height: 34px;
   }
   /* Countries We Covered  */
-  .countries-covered{
+  .countries-covered {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .countries-covered-list{
+  .countries-covered-list {
     width: 100%;
     margin-bottom: 40px;
   }
-  .country{
+  .country {
     width: 30%;
   }
-  .country + .country{
+  .country + .country {
     margin-left: 5%;
   }
   /* Testimonial */
-  .testimonial{
+  .testimonial {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .testomonial-list{
+  .testomonial-list {
     margin-bottom: 40px;
   }
   /* Ready to chase your dreams? */
-  .ready-dream{
+  .ready-dream {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .ready-dream-title{
+  .ready-dream-title {
     line-height: 43px;
     margin-bottom: 0;
   }
   /* footer  */
-  .site-footer{
+  .site-footer {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .footer-list{
+  .footer-list {
     padding: 0;
   }
-  .our-address{
+  .our-address {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
-  .footer-navigation{
+  .footer-navigation {
     margin-left: 0;
   }
-  .social-networks > a > img{
+  .social-networks > a > img {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    margin-top: 73px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .button {
+    padding: 12px 25px;
+  }
+  .button::after {
+    width: 23px;
+    height: 22px;
+    background-size: contain;
+  }
+  .section-title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .section-info {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  .dote {
+    width: 8px;
+    height: 8px;
+  }
+  .solid-dote {
+    width: 11px;
+    height: 11px;
+  }
+  .learn-more-link {
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+  .learn-more-link::after {
+    width: 18px;
+    margin-left: 13px;
+  }
+  /* HEADER  */
+  .logo-link > img {
+    width: 120px;
+    height: auto;
+  }
+  .nav-item + .nav-item {
+    margin-left: 15px;
+  }
+  .nav-link {
+    font-size: 15px;
+    line-height: 16px;
+  }
+  .nav-button {
+    padding: 7px 28px 11px 30px;
+    border: 1px solid #717cff;
+  }
+  /* HERO  */
+  .hero-section {
+    padding-top: 50px;
+    background-position: calc(50% + 313px) 108px;
+  }
+  .hero-container::after {
+    height: 400px;
+  }
+  .hero-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .hero-text {
+    font-size: 18px;
+    line-height: 34px;
+  }
+  .apply-button {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  /* featured-universities */
+  .universities-list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  /* our-services */
+  .services-item {
+    padding: 20px 15px 25px 20px;
+  }
+  .services-item:not(:nth-child(3)):not(:last-child) {
+    margin-right: 5%;
+  }
+  .services-item::before {
+    width: 60px;
+    height: 60px;
+  }
+  .services-name {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  /* news  */
+  .news {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .news-list {
+    margin-bottom: 60px;
+  }
+  .new-link::before {
+    height: 160px;
+  }
+  .news-box {
+    padding: 30px 20px;
+    min-height: 188px;
+  }
+  .new-data {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .new-info {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .news-button {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  /* Upcoming University Events */
+  .upcoming-university {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .upcoming-item {
+    padding: 20px 24px;
+  }
+  .university-name > span.data {
+    padding: 8px 18px;
+    margin-right: 15px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  span.data > small {
+    font-size: 16px;
+  }
+  .university-name {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .time {
+    margin-left: 12px;
+    font-size: 12px;
+    line-height: 42px;
+  }
+  .time::before {
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+  }
+  /* Countries We Covered  */
+  .countries-covered {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .country-link::before {
+    height: 190px;
+  }
+  .countries-name {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+  /* Testimonial */
+  .testimonial {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .testomonial-link {
+    font-size: 16px;
+  }
+  /* Ready to chase your dreams? */
+  .ready-dream {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .ready-dream-title {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .ready-dream-link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  /* footer  */
+  .site-footer {
+    padding-bottom: 30px;
+  }
+  address {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .footer-link {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .social-networks > a > img {
+    width: 20px;
+    height: 20px;
+  }
+  .trade {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    padding: 10px 14px;
+  }
+  .button::after {
+    width: 23px;
+    height: 22px;
+    background-size: contain;
+  }
+  .section-title {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .section-info {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  .dote {
+    width: 8px;
+    height: 8px;
+  }
+  .solid-dote {
+    width: 10px;
+    height: 10px;
+  }
+  .learn-more-link {
+    padding: 12px 0;
+    font-size: 14px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+  .learn-more-link::after {
+    width: 17px;
+    margin-left: 13px;
+    background-repeat: no-repeat;
+  }
+  /* HEADER  */
+  .dropdown-button {
+    display: block;
+    margin-left: auto;
+    border: none;
+    background: none;
+    font-size: 22px;
+  }
+  .nav-list {
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    top: 73px;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.3s ease;
+    transform: translateX(-100%);
+  }
+  .nav-list-open {
+    transform: translateY(0);
+  }
+  .nav-item + .nav-item {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  .nav-item:not(:last-child)::after {
+    background-color: #fff;
+  }
+  .nav-item:last-child {
+    display: inline-block;
+    margin-top: auto;
+  }
+  .nav-link {
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 15px 0;
+    color: #fff;
+  }
+  .nav-button {
+    padding: 10px 40px 14px 40px;
+    background-color: #fff;
+    color: blue;
+  }
+  /* HERO  */
+  .hero-section {
+    padding-top: 30px;
+    background-position: calc(50% + 288px) 44px;
+  }
+  .hero-container::after {
+    width: 45%;
+    height: 327px;
+  }
+  .hero-date {
+    width: 55%;
+    margin-right: 25px;
+  }
+  .hero-title {
+    font-size: 33px;
+    line-height: 40px;
+  }
+  .hero-text {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  .apply-button {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  .apply-button::after {
+    margin-left: 15px;
+  }
+  .social-media > a {
+    width: 25px;
+    height: 25px;
+  }
+  /* featured-universities */
+  .universities-list {
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 40px auto;
+  }
+  .university {
+    width: 45%;
+    margin-bottom: 15px;
+  }
+  .university:not(:last-child) {
+    margin-right: 0;
+  }
+  .university:not(:last-child):not(:nth-child(2)) {
+    margin-right: 10%;
+  }
+  /* our-services */
+  .our-services {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .services-item {
+    padding: 15px 13px 20px 15px;
+  }
+  .services-item:not(:nth-child(3)):not(:last-child) {
+    margin-right: 5%;
+  }
+  .services-item::before {
+    width: 40px;
+    height: 40px;
+  }
+  .services-name {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .services-text {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  /* news  */
+  .news {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .news-list {
+    margin-bottom: 40px;
+  }
+  .new-link::before {
+    height: 120px;
+  }
+  .news-box {
+    padding: 15px 10px;
+    min-height: 144px;
+  }
+  .new-data {
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .new-data::before {
+    width: 13px;
+    height: 13px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .new-info {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .news-button {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .news-button::after {
+    margin-left: 20px;
+  }
+  /* Upcoming University Events */
+  .upcoming-university {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .upcoming-list {
+    flex-wrap: wrap;
+  }
+  .upcoming-item {
+    width: 100%;
+  }
+  .upcoming-item + .upcoming-item {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .time {
+    font-size: 14px;
+  }
+  .time::before {
+    width: 19px;
+    height: 19px;
+  }
+  /* Countries We Covered  */
+  .countries-covered {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .countries-covered-list {
+    align-items: stretch;
+  }
+  .country-link::before {
+    height: 140px;
+  }
+  .countries-name {
+    font-size: 20px;
+  }
+  .countries-info {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  /* Testimonial */
+  .testimonial {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .testomonial-list {
+    margin-bottom: 0px;
+  }
+  .testomonial-link {
+    font-size: 16px;
+    width: 360px;
+  }
+  /* Ready to chase your dreams? */
+  .ready-dream {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .ready-dream-title {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 0;
+  }
+  .ready-dream-link {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .ready-dream-link::after {
+    margin-left: 20px;
+  }
+  /* footer  */
+  .site-footer {
+    padding-bottom: 20px;
+  }
+  .site-footer .logo-img {
+    width: 140px;
+    height: auto;
+  }
+  address {
+    width: 60%;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: right;
+  }
+  .footer-link {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .footer-navigation {
+    margin-right: 0;
+  }
+  .our-brach {
+    margin-right: 0;
+  }
+  .social-networks > a > img {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    margin-top: 43px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .button {
+    padding: 10px 12px;
+    white-space: nowrap;
+  }
+  .button::after {
+    width: 19px;
+    height: 19px;
+    background-size: contain;
+  }
+  .button:hover::after {
+    transform: translateX(5px);
+  }
+  .section-title {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .section-info {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  .dote {
+    padding: 0;
+    width: 8px;
+    height: 8px;
+  }
+  .solid-dote {
+    width: 10px;
+    height: 10px;
+  }
+  .learn-more-link {
+    padding: 12px 0;
+    font-size: 14px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+  .learn-more-link::after {
+    width: 17px;
+    margin-left: 13px;
+    background-repeat: no-repeat;
+  }
+  /* HEADER  */
+  .dropdown-button {
+    padding: 0;
+    font-size: 20px;
+  }
+  .nav-list {
+    padding-top: 40px;
+    top: 43px;
+  }
+  .nav-item + .nav-item {
+    margin-top: 12px;
+  }
+  .nav-item:last-child {
+    display: inline-block;
+    margin-top: auto;
+  }
+  .nav-link {
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 0;
+    color: #fff;
+  }
+  .nav-button {
+    padding: 10px 40px 14px 40px;
+    background-color: #fff;
+    color: blue;
+  }
+  /* HERO  */
+  .hero-section {
+    background-position: calc(50%) 70px;
+    background-size: 100% 30%;
+  }
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-container::after {
+    width: 100%;
+    height: 200px;
+    order: -1;
+    margin: 0 auto;
+    background-position: center;
+  }
+  .hero-date {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .hero-text {
+    margin-bottom: 20px;
+  }
+  .apply-button {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  .apply-button::after {
+    margin-left: 10px;
+  }
+  .social-media {
+    justify-content: center;
+  }
+  .social-media > a {
+    width: auto;
+    height: auto;
+  }
+  /* featured-universities */
+  .featured-universities {
+    padding: 30px 0;
+  }
+  .universities-list {
+    width: 100%;
+  }
+  /* our-services */
+  .services-item {
+    width: 100%;
+    padding: 15px 13px 20px 15px;
+    margin-bottom: 20px;
+  }
+  .services-item:not(:nth-child(3)):not(:last-child) {
+    margin-right: 0;
+  }
+  .services-item::before {
+    width: 45px;
+    height: 45px;
+  }
+  .services-name {
+    font-size: 18px;
+  }
+  .services-text {
+    line-height: 20px;
+  }
+  /* news  */
+  .news-list {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .news-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .news-item + .news-item {
+    margin-left: 0;
+  }
+  .new-link {
+    display: block;
+    margin: 0 auto;
+  }
+  .new-link::before {
+    height: 150px;
+  }
+  .news-box {
+    padding: 15px 15px;
+    min-height: 144px;
+  }
+  .new-data {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .new-data::before {
+    width: 15px;
+    height: 15px;
+  }
+  .new-info {
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .news-button {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .news-button::after {
+    margin-left: 15px;
+  }
+  /* Upcoming University Events */
+  .upcoming-list {
+    flex-wrap: wrap;
+  }
+  .upcoming-item {
+    width: 100%;
+    padding: 15px 15px;
+  }
+  .upcoming-item + .upcoming-item {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .university-name {
+    line-height: 25px;
+  }
+  .upcoming-footer {
+    flex-wrap: wrap;
+  }
+  .time {
+    white-space: nowrap;
+    margin-left: 0;
+  }
+  /* Countries We Covered  */
+  .countries-covered-list {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .country {
+    width: 100%;
+  }
+  .country + .country {
+    margin-left: 0;
+  }
+  .country-link {
+    display: block;
+    margin: 0 auto;
+  }
+  .country-link::before {
+    height: 200px;
+  }
+  .countries-name {
+    font-size: 22px;
+  }
+  .countries-info {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* Testimonial */
+  .testomonial-list {
+    margin-bottom: 0px;
+  }
+  .testomonial-link {
+    width: 360px;
+    font-size: 16px;
+    padding: 10px 34px 46px 10px;
+  }
+  .testomonial-item-header::before {
+    margin-right: 20px;
+  }
+  /* Ready to chase your dreams? */
+  .ready-dream {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .ready-dream-container {
+    flex-direction: column;
+  }
+  .ready-dream-title {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .ready-dream-link {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .ready-dream-link::after {
+    margin-left: 15px;
+  }
+  /* footer  */
+  .site-footer {
+    padding-bottom: 20px;
+  }
+  .site-footer .logo-img {
+    width: 140px;
+    height: auto;
+  }
+  .our-address {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  address {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+  }
+  .footer-link {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .footer-navigation {
+    margin-right: 20px;
+  }
+  .our-brach {
+    margin-right: 20px;
+  }
+  .social-networks {
+    margin-top: 20px;
+  }
+  .social-networks > a > img {
+    width: auto;
+    height: auto;
+  }
+  .trade {
+    font-size: 14px;
   }
 }

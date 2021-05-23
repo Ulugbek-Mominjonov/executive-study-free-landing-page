@@ -12,3 +12,9 @@ function active(id){
     document.getElementById(id).style.setProperty("--set-width", "50%");
     console.log(id);
 }
+
+var dropdownBtn = document.querySelector('.dropdown-button');
+dropdownBtn.addEventListener('click', function (){
+    document.querySelector('.fas').classList.toggle("fa-times");
+    document.querySelector('.nav-list').classList.toggle("nav-list-open")
+})
